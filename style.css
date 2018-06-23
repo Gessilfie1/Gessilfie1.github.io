@@ -1,0 +1,251 @@
+/* An asterisk means everything */
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: Arial, "Times New Roman", sans-serif;
+}
+
+html {
+	font-size: 16px;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+header {
+  color: #fff;
+  background: #08436d;
+  height: 100vh;
+  width: 100vw;
+
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+header button {
+  background: transparent;
+  border: 2px solid #fff;
+
+  font-size: 1.618rem;
+  padding:.5rem 1rem;
+
+  margin-top: .8rem;
+
+  transition: 0.4s;
+}
+
+header button:hover{
+	background: cyan;
+	border-color: cyan;
+}
+
+.highlight {
+	color:red;
+}
+
+nav{
+
+	width: 100%;
+
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+
+
+	background: #052841;
+	padding: 0.5em;
+	color:#fff;
+	font-weight: bold;
+}
+
+nav a{
+	padding: .5em 2em;
+	text-decoration: none;
+	color: white;
+}
+
+nav a:hover {
+	background: #666;
+}
+
+.sticky {
+	position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+}
+
+.sticky + main {
+	padding-top: 3em;
+}
+
+main{
+	min-height: 100vh;
+	background: #9cd2f4;
+}
+
+main section: nth-child(odd){
+	background: #ddd;
+}
+
+section > *{
+	max-width: 850px;
+	margin: 1em auto;
+}
+
+section {
+	margin-bottom: 10em;
+} 
+
+#projects {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 1em;
+}
+
+#projects span{
+	display: block;
+}
+#projects article{
+	background: #ccc;
+	text-align: center;
+	padding: 1em;
+	height: 12em;
+
+	position: relative;
+
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  cursor:pointer;
+}
+
+#projects article:hover{
+	background: #fff;
+}
+
+#projects *{
+	transition: 0.5s;
+}
+#projects article h3,
+#projects article span,
+#projects article button{
+	position: absolute;
+	opacity: 0;
+}
+
+
+#projects article h3 {
+	top: -2em;
+
+} 
+#projects article span {
+	top: 0em;
+
+}
+#projects article button{
+	bottom: -2em;
+}
+
+#projects article:hover h3 {
+	opacity: 1;
+	top: 1em;
+
+
+} 
+#projects article:hover span {
+	opacity: 1;
+	top: 3em;
+
+}
+#projects article:hover button{
+	opacity: 1;
+	bottom: 1em;
+}
+
+#aboutMe {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 1em;
+}
+
+#aboutMe span{
+	display: block;
+}
+#aboutMe article{
+	background: #ccc;
+	text-align: center;
+	padding: 0;
+	height: 12em;
+
+	position: relative;
+
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  cursor:pointer;
+}
+
+#aboutMe article img {
+	height: 100%;
+}
+
+#aboutMe article:hover{
+	background: #fff;
+}
+
+#aboutMe *{
+	transition: 0.5s;
+}
+#aboutMe article h3,
+#aboutMe article span,
+#aboutMe article button{
+	position: absolute;
+	opacity: 0;
+}
+
+
+#aboutMe article h3 {
+	top: -2em;
+
+} 
+#aboutMe article span {
+	top: 0em;
+
+}
+#aboutMe article button{
+	bottom: -2em;
+}
+
+#aboutMe article:hover h3 {
+	opacity: 1;
+	top: 1em;
+
+
+} 
+#aboutMe article:hover span {
+	opacity: 1;
+	top: 3em;
+
+}
+#aboutMe article:hover button{
+	opacity: 1;
+	bottom: 1em;
+}
+
