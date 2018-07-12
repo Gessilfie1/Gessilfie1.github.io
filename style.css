@@ -128,7 +128,11 @@ section img{
 
 }
 
-
+#imageSlider{
+  display: grid;
+  justify-content: center;
+  
+}
 
 
   #projects {
@@ -270,3 +274,58 @@ footer{
   from{ opacity: 0}
   to {opacity: 1}
 }
+
+/*controls pop up modal2 styling*/
+.modal2{
+  display:none;
+  position: fixed;
+  z-index:1;
+  left: 0;
+  top:0;
+  height: 100%;
+  width:100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+
+.closeBtn2{
+  color:#ccc;
+  float: right;
+  font-size:30px;
+  color:#fff;
+}
+
+.closeBtn2:hover,.closeBtn2:focus{
+  color:#000;
+  text-decoration: none;
+  cursor:pointer;
+}
+
+/*controls pop up modal3 styling*/
+.modal3{
+  display:none;
+  position: fixed;
+  z-index:1;
+  left: 0;
+  top:0;
+  height: 100%;
+  width:100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+
+.closeBtn3{
+  color:#ccc;
+  float: right;
+  font-size:30px;
+  color:#fff;
+}
+
+.closeBtn3:hover,.closeBtn3:focus{
+  color:#000;
+  text-decoration: none;
+  cursor:pointer;
+}
+
